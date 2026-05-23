@@ -1,0 +1,844 @@
+{
+    "projectName": "Start Stop From 3 Diffrente Places",
+    "version": "1.0",
+    "circuit": {
+        "components": [
+            {
+                "id": "1778443545690",
+                "componentId": "PushButtonNC",
+                "x": 960,
+                "y": 1045,
+                "rotation": 0,
+                "tagIndex": 1,
+                "label": "",
+                "labelOffset": {
+                    "x": -60,
+                    "y": 0
+                },
+                "remainingTime": 1,
+                "isOn": false,
+                "isPressed": false,
+                "portPotentials": {
+                    "in": {
+                        "line": true,
+                        "neutral": false,
+                        "dLine": true,
+                        "dNeutral": false,
+                        "l1": true,
+                        "l2": false,
+                        "l3": false
+                    },
+                    "out": {
+                        "line": true,
+                        "neutral": false,
+                        "dLine": true,
+                        "dNeutral": false,
+                        "l1": true,
+                        "l2": false,
+                        "l3": false
+                    }
+                }
+            },
+            {
+                "id": "1778443548572",
+                "componentId": "PowerLine",
+                "x": 960,
+                "y": 870,
+                "rotation": 0,
+                "tagIndex": 1,
+                "label": "",
+                "labelOffset": {
+                    "x": -60,
+                    "y": 0
+                },
+                "remainingTime": 1,
+                "isOn": false,
+                "isPressed": false,
+                "portPotentials": {
+                    "p1": {
+                        "line": true,
+                        "neutral": false,
+                        "dLine": true,
+                        "dNeutral": false,
+                        "l1": true,
+                        "l2": false,
+                        "l3": false
+                    }
+                }
+            },
+            {
+                "id": "1778443566642",
+                "componentId": "PushButtonNC",
+                "x": 960,
+                "y": 1235,
+                "rotation": 0,
+                "tagIndex": 2,
+                "label": "",
+                "labelOffset": {
+                    "x": -60,
+                    "y": 0
+                },
+                "remainingTime": 1,
+                "isOn": false,
+                "isPressed": false,
+                "portPotentials": {
+                    "in": {
+                        "line": true,
+                        "neutral": false,
+                        "dLine": true,
+                        "dNeutral": false,
+                        "l1": true,
+                        "l2": false,
+                        "l3": false
+                    },
+                    "out": {
+                        "line": true,
+                        "neutral": false,
+                        "dLine": true,
+                        "dNeutral": false,
+                        "l1": true,
+                        "l2": false,
+                        "l3": false
+                    }
+                }
+            },
+            {
+                "id": "1778443577746",
+                "componentId": "PushButtonNC",
+                "x": 960,
+                "y": 1415,
+                "rotation": 0,
+                "tagIndex": 3,
+                "label": "",
+                "labelOffset": {
+                    "x": -60,
+                    "y": 0
+                },
+                "remainingTime": 1,
+                "isOn": false,
+                "isPressed": false,
+                "portPotentials": {
+                    "in": {
+                        "line": true,
+                        "neutral": false,
+                        "dLine": true,
+                        "dNeutral": false,
+                        "l1": true,
+                        "l2": false,
+                        "l3": false
+                    },
+                    "out": {
+                        "line": true,
+                        "neutral": false,
+                        "dLine": true,
+                        "dNeutral": false,
+                        "l1": true,
+                        "l2": false,
+                        "l3": false
+                    }
+                }
+            },
+            {
+                "id": "1778443584154",
+                "componentId": "PushButtonNO",
+                "x": 960,
+                "y": 1605,
+                "rotation": 0,
+                "tagIndex": 4,
+                "label": "",
+                "labelOffset": {
+                    "x": -60,
+                    "y": 0
+                },
+                "remainingTime": 1,
+                "isOn": false,
+                "isPressed": false,
+                "portPotentials": {
+                    "in": {
+                        "line": true,
+                        "neutral": false,
+                        "dLine": true,
+                        "dNeutral": false,
+                        "l1": true,
+                        "l2": false,
+                        "l3": false
+                    },
+                    "out": {
+                        "line": false,
+                        "neutral": false,
+                        "dLine": false,
+                        "dNeutral": false,
+                        "l1": false,
+                        "l2": false,
+                        "l3": false
+                    }
+                }
+            },
+            {
+                "id": "1778443601707",
+                "componentId": "PushButtonNO",
+                "x": 1100,
+                "y": 1605,
+                "rotation": 0,
+                "tagIndex": 5,
+                "label": "",
+                "labelOffset": {
+                    "x": -60,
+                    "y": 0
+                },
+                "remainingTime": 1,
+                "isOn": false,
+                "isPressed": false,
+                "portPotentials": {
+                    "in": {
+                        "line": true,
+                        "neutral": false,
+                        "dLine": true,
+                        "dNeutral": false,
+                        "l1": true,
+                        "l2": false,
+                        "l3": false
+                    },
+                    "out": {
+                        "line": false,
+                        "neutral": false,
+                        "dLine": false,
+                        "dNeutral": false,
+                        "l1": false,
+                        "l2": false,
+                        "l3": false
+                    }
+                }
+            },
+            {
+                "id": "1778443612210",
+                "componentId": "PushButtonNO",
+                "x": 1230,
+                "y": 1605,
+                "rotation": 0,
+                "tagIndex": 6,
+                "label": "",
+                "labelOffset": {
+                    "x": -60,
+                    "y": 0
+                },
+                "remainingTime": 1,
+                "isOn": false,
+                "isPressed": false,
+                "portPotentials": {
+                    "in": {
+                        "line": true,
+                        "neutral": false,
+                        "dLine": true,
+                        "dNeutral": false,
+                        "l1": true,
+                        "l2": false,
+                        "l3": false
+                    },
+                    "out": {
+                        "line": false,
+                        "neutral": false,
+                        "dLine": false,
+                        "dNeutral": false,
+                        "l1": false,
+                        "l2": false,
+                        "l3": false
+                    }
+                }
+            },
+            {
+                "id": "1778443623873",
+                "componentId": "NOContact",
+                "x": 1360,
+                "y": 1605,
+                "rotation": 0,
+                "tagIndex": 1,
+                "label": "",
+                "labelOffset": {
+                    "x": -60,
+                    "y": 0
+                },
+                "remainingTime": 1,
+                "isOn": false,
+                "isPressed": false,
+                "prefix": "K",
+                "portPotentials": {
+                    "in": {
+                        "line": true,
+                        "neutral": false,
+                        "dLine": true,
+                        "dNeutral": false,
+                        "l1": true,
+                        "l2": false,
+                        "l3": false
+                    },
+                    "out": {
+                        "line": false,
+                        "neutral": false,
+                        "dLine": false,
+                        "dNeutral": false,
+                        "l1": false,
+                        "l2": false,
+                        "l3": false
+                    }
+                }
+            },
+            {
+                "id": "1778443634546",
+                "componentId": "Contactor",
+                "x": 960,
+                "y": 1835,
+                "rotation": 0,
+                "tagIndex": 1,
+                "label": "",
+                "labelOffset": {
+                    "x": -60,
+                    "y": 0
+                },
+                "remainingTime": 1,
+                "isOn": false,
+                "isPressed": false,
+                "portPotentials": {
+                    "in": {
+                        "line": false,
+                        "neutral": false,
+                        "dLine": false,
+                        "dNeutral": false,
+                        "l1": false,
+                        "l2": false,
+                        "l3": false
+                    },
+                    "out": {
+                        "line": false,
+                        "neutral": true,
+                        "dLine": false,
+                        "dNeutral": true,
+                        "l1": false,
+                        "l2": false,
+                        "l3": false
+                    }
+                }
+            },
+            {
+                "id": "1778443640480",
+                "componentId": "Nutral",
+                "x": 960,
+                "y": 2010,
+                "rotation": 180,
+                "tagIndex": 1,
+                "label": "",
+                "labelOffset": {
+                    "x": -60,
+                    "y": 0
+                },
+                "remainingTime": 1,
+                "isOn": false,
+                "isPressed": false,
+                "portPotentials": {
+                    "n1": {
+                        "line": false,
+                        "neutral": true,
+                        "dLine": false,
+                        "dNeutral": true,
+                        "l1": false,
+                        "l2": false,
+                        "l3": false
+                    }
+                }
+            },
+            {
+                "id": "1778443666545",
+                "componentId": "ThreePhaseLine",
+                "x": 1580,
+                "y": 870,
+                "rotation": 0,
+                "tagIndex": 1,
+                "label": "",
+                "labelOffset": {
+                    "x": -60,
+                    "y": 0
+                },
+                "remainingTime": 1,
+                "isOn": false,
+                "isPressed": false,
+                "portPotentials": {
+                    "L1": {
+                        "line": true,
+                        "neutral": false,
+                        "dLine": true,
+                        "dNeutral": false,
+                        "l1": true,
+                        "l2": false,
+                        "l3": false
+                    },
+                    "L2": {
+                        "line": true,
+                        "neutral": false,
+                        "dLine": true,
+                        "dNeutral": false,
+                        "l1": false,
+                        "l2": true,
+                        "l3": false
+                    },
+                    "L3": {
+                        "line": true,
+                        "neutral": false,
+                        "dLine": true,
+                        "dNeutral": false,
+                        "l1": false,
+                        "l2": false,
+                        "l3": true
+                    }
+                }
+            },
+            {
+                "id": "1778443672467",
+                "componentId": "ContactorMainContacts",
+                "x": 1580,
+                "y": 1235,
+                "rotation": 0,
+                "tagIndex": 1,
+                "label": "",
+                "labelOffset": {
+                    "x": -60,
+                    "y": 0
+                },
+                "remainingTime": 1,
+                "isOn": false,
+                "isPressed": false,
+                "portPotentials": {
+                    "L1_in": {
+                        "line": true,
+                        "neutral": false,
+                        "dLine": true,
+                        "dNeutral": false,
+                        "l1": true,
+                        "l2": false,
+                        "l3": false
+                    },
+                    "L2_in": {
+                        "line": true,
+                        "neutral": false,
+                        "dLine": true,
+                        "dNeutral": false,
+                        "l1": false,
+                        "l2": true,
+                        "l3": false
+                    },
+                    "L3_in": {
+                        "line": true,
+                        "neutral": false,
+                        "dLine": true,
+                        "dNeutral": false,
+                        "l1": false,
+                        "l2": false,
+                        "l3": true
+                    },
+                    "L1_out": {
+                        "line": false,
+                        "neutral": false,
+                        "dLine": false,
+                        "dNeutral": false,
+                        "l1": false,
+                        "l2": false,
+                        "l3": false
+                    },
+                    "L2_out": {
+                        "line": false,
+                        "neutral": false,
+                        "dLine": false,
+                        "dNeutral": false,
+                        "l1": false,
+                        "l2": false,
+                        "l3": false
+                    },
+                    "L3_out": {
+                        "line": false,
+                        "neutral": false,
+                        "dLine": false,
+                        "dNeutral": false,
+                        "l1": false,
+                        "l2": false,
+                        "l3": false
+                    }
+                }
+            },
+            {
+                "id": "1778443689395",
+                "componentId": "SimpleMotor",
+                "x": 1580,
+                "y": 1670,
+                "rotation": 0,
+                "tagIndex": 1,
+                "label": "",
+                "labelOffset": {
+                    "x": -60,
+                    "y": 0
+                },
+                "remainingTime": 1,
+                "isOn": false,
+                "isPressed": false,
+                "motorState": {
+                    "isRunning": false,
+                    "mode": "star",
+                    "direction": null
+                },
+                "portPotentials": {
+                    "U": {
+                        "line": false,
+                        "neutral": false,
+                        "dLine": false,
+                        "dNeutral": false,
+                        "l1": false,
+                        "l2": false,
+                        "l3": false
+                    },
+                    "V": {
+                        "line": false,
+                        "neutral": false,
+                        "dLine": false,
+                        "dNeutral": false,
+                        "l1": false,
+                        "l2": false,
+                        "l3": false
+                    },
+                    "W": {
+                        "line": false,
+                        "neutral": false,
+                        "dLine": false,
+                        "dNeutral": false,
+                        "l1": false,
+                        "l2": false,
+                        "l3": false
+                    }
+                }
+            }
+        ],
+        "wires": [
+            {
+                "id": "1778443562498",
+                "from": {
+                    "compId": "1778443545690",
+                    "portId": "in",
+                    "x": 960,
+                    "y": 990
+                },
+                "to": {
+                    "compId": "1778443548572",
+                    "portId": "p1"
+                },
+                "midY1": 980,
+                "midX1": 960,
+                "midY": 945,
+                "midX2": 960,
+                "midY2": 920
+            },
+            {
+                "id": "1778443572042",
+                "from": {
+                    "compId": "1778443566642",
+                    "portId": "in",
+                    "x": 960,
+                    "y": 1170
+                },
+                "to": {
+                    "compId": "1778443545690",
+                    "portId": "out"
+                },
+                "midY1": 1170,
+                "midX1": 960,
+                "midY": 1140,
+                "midX2": 960,
+                "midY2": 1110
+            },
+            {
+                "id": "1778443580570",
+                "from": {
+                    "compId": "1778443577746",
+                    "portId": "in",
+                    "x": 960,
+                    "y": 1350
+                },
+                "to": {
+                    "compId": "1778443566642",
+                    "portId": "out"
+                },
+                "midY1": 1350,
+                "midX1": 960,
+                "midY": 1325,
+                "midX2": 960,
+                "midY2": 1300
+            },
+            {
+                "id": "1778443588371",
+                "from": {
+                    "compId": "1778443584154",
+                    "portId": "in",
+                    "x": 960,
+                    "y": 1540
+                },
+                "to": {
+                    "compId": "1778443577746",
+                    "portId": "out"
+                },
+                "midY1": 1540,
+                "midX1": 960,
+                "midY": 1510,
+                "midX2": 960,
+                "midY2": 1480
+            },
+            {
+                "id": "1778443606193",
+                "from": {
+                    "compId": "1778443601707",
+                    "portId": "in",
+                    "x": 1100,
+                    "y": 1540
+                },
+                "to": {
+                    "compId": "1778443584154",
+                    "portId": "in"
+                },
+                "midY1": 1540,
+                "midX1": 1100,
+                "midY": 1540,
+                "midX2": 960,
+                "midY2": 1540
+            },
+            {
+                "id": "1778443608601",
+                "from": {
+                    "compId": "1778443584154",
+                    "portId": "out",
+                    "x": 960,
+                    "y": 1670
+                },
+                "to": {
+                    "compId": "1778443601707",
+                    "portId": "out"
+                },
+                "midY1": 1670,
+                "midX1": 960,
+                "midY": 1670,
+                "midX2": 1100,
+                "midY2": 1670
+            },
+            {
+                "id": "1778443617114",
+                "from": {
+                    "compId": "1778443612210",
+                    "portId": "in",
+                    "x": 1230,
+                    "y": 1540
+                },
+                "to": {
+                    "compId": "1778443601707",
+                    "portId": "in"
+                },
+                "midY1": 1540,
+                "midX1": 1230,
+                "midY": 1540,
+                "midX2": 1100,
+                "midY2": 1540
+            },
+            {
+                "id": "1778443619281",
+                "from": {
+                    "compId": "1778443601707",
+                    "portId": "out",
+                    "x": 1100,
+                    "y": 1670
+                },
+                "to": {
+                    "compId": "1778443612210",
+                    "portId": "out"
+                },
+                "midY1": 1670,
+                "midX1": 1100,
+                "midY": 1670,
+                "midX2": 1230,
+                "midY2": 1670
+            },
+            {
+                "id": "1778443628689",
+                "from": {
+                    "compId": "1778443623873",
+                    "portId": "in",
+                    "x": 1360,
+                    "y": 1540
+                },
+                "to": {
+                    "compId": "1778443612210",
+                    "portId": "in"
+                },
+                "midY1": 1540,
+                "midX1": 1360,
+                "midY": 1540,
+                "midX2": 1230,
+                "midY2": 1540
+            },
+            {
+                "id": "1778443630771",
+                "from": {
+                    "compId": "1778443612210",
+                    "portId": "out",
+                    "x": 1230,
+                    "y": 1670
+                },
+                "to": {
+                    "compId": "1778443623873",
+                    "portId": "out"
+                },
+                "midY1": 1670,
+                "midX1": 1230,
+                "midY": 1670,
+                "midX2": 1360,
+                "midY2": 1670
+            },
+            {
+                "id": "1778443638933",
+                "from": {
+                    "compId": "1778443634546",
+                    "portId": "in",
+                    "x": 960,
+                    "y": 1760
+                },
+                "to": {
+                    "compId": "1778443584154",
+                    "portId": "out"
+                },
+                "midY1": 1760,
+                "midX1": 960,
+                "midY": 1715,
+                "midX2": 960,
+                "midY2": 1670
+            },
+            {
+                "id": "1778443644617",
+                "from": {
+                    "compId": "1778443640480",
+                    "portId": "n1",
+                    "x": 960,
+                    "y": 1980
+                },
+                "to": {
+                    "compId": "1778443634546",
+                    "portId": "out"
+                },
+                "midY1": 1960,
+                "midX1": 960,
+                "midY": 1925,
+                "midX2": 960,
+                "midY2": 1910
+            },
+            {
+                "id": "1778443679778",
+                "from": {
+                    "compId": "1778443672467",
+                    "portId": "L1_in",
+                    "x": 1530,
+                    "y": 1170
+                },
+                "to": {
+                    "compId": "1778443666545",
+                    "portId": "L1"
+                },
+                "midY1": 1170,
+                "midX1": 1530,
+                "midY": 1045,
+                "midX2": 1530,
+                "midY2": 920
+            },
+            {
+                "id": "1778443682073",
+                "from": {
+                    "compId": "1778443666545",
+                    "portId": "L2",
+                    "x": 1580,
+                    "y": 920
+                },
+                "to": {
+                    "compId": "1778443672467",
+                    "portId": "L2_in"
+                },
+                "midY1": 920,
+                "midX1": 1580,
+                "midY": 1045,
+                "midX2": 1580,
+                "midY2": 1170
+            },
+            {
+                "id": "1778443684556",
+                "from": {
+                    "compId": "1778443672467",
+                    "portId": "L3_in",
+                    "x": 1630,
+                    "y": 1170
+                },
+                "to": {
+                    "compId": "1778443666545",
+                    "portId": "L3"
+                },
+                "midY1": 1170,
+                "midX1": 1630,
+                "midY": 1045,
+                "midX2": 1630,
+                "midY2": 920
+            },
+            {
+                "id": "1778443693171",
+                "from": {
+                    "compId": "1778443689395",
+                    "portId": "U",
+                    "x": 1530,
+                    "y": 1560
+                },
+                "to": {
+                    "compId": "1778443672467",
+                    "portId": "L1_out"
+                },
+                "midY1": 1560,
+                "midX1": 1530,
+                "midY": 1429.5,
+                "midX2": 1530,
+                "midY2": 1299
+            },
+            {
+                "id": "1778443695537",
+                "from": {
+                    "compId": "1778443672467",
+                    "portId": "L2_out",
+                    "x": 1580,
+                    "y": 1299
+                },
+                "to": {
+                    "compId": "1778443689395",
+                    "portId": "V"
+                },
+                "midY1": 1299,
+                "midX1": 1580,
+                "midY": 1429.5,
+                "midX2": 1580,
+                "midY2": 1560
+            },
+            {
+                "id": "1778443697745",
+                "from": {
+                    "compId": "1778443689395",
+                    "portId": "W",
+                    "x": 1630,
+                    "y": 1560
+                },
+                "to": {
+                    "compId": "1778443672467",
+                    "portId": "L3_out"
+                },
+                "midY1": 1560,
+                "midX1": 1630,
+                "midY": 1429.5,
+                "midX2": 1630,
+                "midY2": 1299
+            }
+        ]
+    }
+}

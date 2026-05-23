@@ -1,0 +1,7 @@
+node_modules
+.env
+data/tracking.json
+.vscode
+.DS_Store
+dist
+build
