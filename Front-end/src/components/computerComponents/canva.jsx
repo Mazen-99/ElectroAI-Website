@@ -267,31 +267,22 @@ const Canva = ({ isSimulatingProp: isSimulating, setIsSimulatingProp: setIsSimul
 
         // Adjust x and y so the first port hits the grid
         x = Math.round((x + firstPort.x) / 10) * 10 - firstPort.x
-        y = Math.round((y + firstPort.y) / 10) * 10 - firstPort.y
-
-        // Calculate next tagIndex based on first available number for this prefix
+        y = Math.round((y + firstPort.y) / 10) * 10 - firstPort.y        // Calculate next tagIndex based on MAX existing number to prevent "going back"
         const prefix = metadata.prefix || ""
-        let nextIndex = 1
-
-        const secondaryTypes = ['NCContact', 'NOContact', 'ContactorMainContacts'];
+        const secondaryTypes = ['NCContact', 'NOContact', 'ContactorMainContacts', 'OverloadContact', 'TimerNC', 'TimerNO'];
         const isCurrentSecondary = secondaryTypes.includes(componentId);
 
-        if (!isCurrentSecondary) {
-            // For Primary components, find first available index NOT taken by another PRIMARY component
-            const existingIndices = placedComponents
-                .filter(c => {
-                    const cPrefix = c.prefix || componentMap[c.componentId].prefix;
-                    return cPrefix === prefix && !secondaryTypes.includes(c.componentId);
-                })
-                .map(c => c.tagIndex || 1);
+        // Filter components that share the same prefix AND the same classification (Primary vs Secondary)
+        const relevantIndices = placedComponents
+            .filter(c => {
+                const cPrefix = c.prefix || componentMap[c.componentId].prefix;
+                const isCSecondary = secondaryTypes.includes(c.componentId);
+                return cPrefix === prefix && isCSecondary === isCurrentSecondary;
+            })
+            .map(c => c.tagIndex || 0);
 
-            while (existingIndices.includes(nextIndex)) {
-                nextIndex++
-            }
-        } else {
-            // For Secondary components (Points), they don't need to be unique and don't increment
-            nextIndex = 1;
-        }
+        const maxIndex = relevantIndices.length > 0 ? Math.max(...relevantIndices) : 0;
+        const nextIndex = maxIndex + 1;
 
         const newComponent = {
             id: Date.now().toString(),

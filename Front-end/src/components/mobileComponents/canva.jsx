@@ -34,21 +34,26 @@ const Canva = ({
     const [initialPinchDistance, setInitialPinchDistance] = useState(null)
     const [initialPinchZoom, setInitialPinchZoom] = useState(null)
 
-    // Auto-increment Logic for Tags (Scoped by Prefix Group)
+    // Auto-increment Logic for Tags (Aligned with Computer logic)
     const getNextTagIndex = (compId) => {
         const metadata = componentMap[compId];
         const prefix = metadata.prefix || "";
         
-        // Find all components that share the SAME prefix (e.g., PushButtonNO and PushButtonNC both use 'S')
-        const existingIndices = placedComponents
-            .filter(c => (c.prefix || componentMap[c.componentId].prefix) === prefix)
-            .map(c => c.tagIndex || 1);
-            
-        let nextIndex = 1;
-        while (existingIndices.includes(nextIndex)) {
-            nextIndex++;
-        }
-        return nextIndex;
+        // Define secondary types (points/contacts) that shouldn't increment primary coils
+        const secondaryTypes = ['NCContact', 'NOContact', 'ContactorMainContacts', 'OverloadContact', 'TimerNC', 'TimerNO'];
+        const isCurrentSecondary = secondaryTypes.includes(compId);
+
+        // Filter components that share the same prefix AND the same classification (Primary vs Secondary)
+        const relevantIndices = placedComponents
+            .filter(c => {
+                const cPrefix = c.prefix || componentMap[c.componentId].prefix;
+                const isCSecondary = secondaryTypes.includes(c.componentId);
+                return cPrefix === prefix && isCSecondary === isCurrentSecondary;
+            })
+            .map(c => c.tagIndex || 0);
+
+        const maxIndex = relevantIndices.length > 0 ? Math.max(...relevantIndices) : 0;
+        return maxIndex + 1;
     };
 
     // Immediate placement from BottomBar
