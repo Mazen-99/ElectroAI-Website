@@ -1,4 +1,5 @@
-const API_URL = 'https://electroai-back-end.up.railway.app'; // Change to your railway URL after deployment
+const API_URL = 'http://localhost:5000'; // Change to your railway URL after deployment
+// My Back-end URL: https://electroai-website.vercel.app
 const refreshBtn = document.getElementById('refreshBtn');
 const clearBtn = document.getElementById('clearBtn');
 const userTableBody = document.getElementById('userTableBody');
